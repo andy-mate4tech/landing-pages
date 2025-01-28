@@ -1,3 +1,6 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 :root {
     --gold: #C49959;
     --dark: #2C2D32;
@@ -10,12 +13,19 @@
     box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: var(--dark);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Header */
 .header {
     background: var(--dark);
     padding: 1rem;
@@ -30,34 +40,55 @@ body {
     height: auto;
 }
 
+/* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('https://www.implantart.com.au/wp-content/uploads/2024/11/Clinic-group-2048x1621-1.jpg');
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 6rem 2rem;
+    padding: 2rem;
     text-align: center;
- }
- 
- .hero h1 {
-    font-size: 3rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
- }
- 
- .hero .gold-text {
+}
+
+.hero .gold-text {
     color: var(--gold);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
- }
- 
- .hero-text {
-    font-size: 1.4rem;
+}
+
+.hero-text {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     max-width: 800px;
     margin: 0 auto 2rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
- }
+    color: var(--gold);
+    animation: glow 2s infinite alternate;
+}
 
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.7);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.9), 0 0 30px rgba(255, 215, 0, 0.9), 0 0 40px rgba(255, 215, 0, 0.9);
+    }
+}
+
+/* Buttons */
 .cta-buttons {
     margin: 3rem 0;
 }
@@ -83,74 +114,128 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* Layout */
 .content-wrapper {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-/* Add to your CSS */
-.section-light {
-    background: white;
-    padding: 3rem 2rem;
-    text-align: center;
+/* Unique Offer Section */
+.unique-offer {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    padding: 4rem 1rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.section-gold {
+.offer-header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.offer-badge {
     background: var(--gold);
     color: white;
-    padding: 3rem 2rem;
-    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
 }
 
-.section-grey {
-    background: var(--light);
-    padding: 3rem 2rem;
+.offer-introduction {
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
-/* Update unique-offer section */
-.unique-offer {
-    padding: 2rem;
-    background: var(--gold);
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    margin: 2rem;
- }
- 
- .unique-offer h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--dark);
- }
- 
- .offer-highlights h3 {
-    font-size: 1.4rem;
-    margin: 2rem 0 1rem;
-    color: var(--gold);
- }
- 
- .offer-highlights ul {
+.offer-highlights {
     display: grid;
-    gap: 1rem;
- }
- 
- .offer-highlights li {
-    background: var(--light);
-    padding: 1rem 1rem 1rem 2.5rem;
-    border-radius: 8px;
-    position: relative;
- }
- 
- .offer-highlights li:before {
-    content: "→";
-    position: absolute;
-    left: 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.highlight-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.highlight-box:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-box h3 {
     color: var(--gold);
- }
- 
- /* Update clinic-features section */
- .tech-grid {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.highlight-box h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+}
+
+.premium-features {
+    list-style: none;
+    padding: 0;
+}
+
+.premium-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.feature-icon {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.offer-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cta-button {
+    background: var(--gold);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(196, 153, 89, 0.3);
+}
+
+/* Update clinic-features section */
+.tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -268,6 +353,7 @@ body {
     }
  }
 
+/* Features Grid */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -290,92 +376,58 @@ body {
     transform: translateY(-5px);
 }
 
-.benefit-list {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-}
-
-.benefit-list li {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background: var(--light);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.benefit-list li:before {
-    content: "✓";
-    color: var(--gold);
-    font-weight: bold;
-    margin-right: 1rem;
-}
-
-.content-section {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
- }
- 
- .services-grid {
+/* Services Section */
+.services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem 2rem;
     justify-items: center;
     max-width: 1000px;
     margin: 3rem auto;
- }
- 
- .service-item {
+}
+
+.service-item {
     text-align: center;
     transition: transform 0.3s ease;
- }
- 
- .service-icon {
+}
+
+.service-icon {
     width: 100%;
     max-width: 120px;
     height: auto;
     margin-bottom: 1rem;
- }
- 
- .team-section {
+}
+
+/* Team Section */
+.team-section {
     background: var(--light);
     padding: 4rem 2rem;
- }
- 
- .team-grid {
+}
+
+.team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
- }
- 
- .team-card {
+}
+
+.team-card {
     background: white;
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
     box-shadow: 0 5px 25px rgba(0,0,0,0.1);
- }
- 
- .team-card img {
+}
+
+.team-card img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 1rem;
- }
- 
- /* .cta-section {
-    background: var(--gold);
-    color: white;
-    padding: 3rem 2rem;
-    text-align: center;
- } */
- 
- .payment-options {
+}
+.payment-options {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,63 +465,142 @@ body {
         padding: 1rem;
     }
  }
- 
- #contact-form-section {
+
+/* Contact Form Section */
+#contact-form-section {
     max-width: 1200px;
     margin: 4rem auto;
     padding: 4rem 2rem;
     background: var(--light);
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.1);
- }
- 
- #contact-form-section .eapps-contact-form-cde9b9ef-6401-42c7-b20e-8ed047c31753-custom-css-hook {
-    max-width: 800px;
-    margin: 0 auto;
- }
- 
- footer {
+}
+
+/* Footer */
+footer {
     background: var(--dark);
     color: white;
     padding: 2rem;
     text-align: center;
- }
- 
- @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .offer-highlights {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .unique-offer {
+        padding: 6rem 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 4rem 1rem;
+        min-height: 80vh;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text {
+        font-size: 1.5rem;
+    }
+    
+    .highlight-box {
+        padding: 1.5rem;
+    }
+    
+    .highlight-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .premium-features li {
+        font-size: 1rem;
+    }
+    
     .tech-grid,
     .features-grid,
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
- 
+    
     .team-grid {
         grid-template-columns: 1fr;
     }
- 
+    
     .button {
         display: block;
         margin: 1rem auto;
     }
- 
+    
     #contact-form-section {
         margin: 2rem 1rem;
         padding: 2rem 1rem;
     }
- }
- 
- @media (max-width: 480px) {
-    .features-grid,
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
- 
-    .payment-options img {
-        max-width: 150px;
-    }
- 
+    
     .team-card img {
         width: 150px;
         height: 150px;
     }
- }
+}
+
+/* Additional Utility Classes */
+.section-light {
+    background: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.section-gold {
+    background: var(--gold);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.section-grey {
+    background: var(--light);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* Benefits List */
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.benefit-list li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: var(--light);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.benefit-list li:before {
+    content: "✓";
+    color: var(--gold);
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/* Animations */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__delay-1s {
+    animation-delay: 1s;
+}
+
+.animate__delay-2s {
+    animation-delay: 2s;
+}
