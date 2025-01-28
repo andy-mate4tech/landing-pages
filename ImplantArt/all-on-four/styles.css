@@ -1,0 +1,441 @@
+:root {
+    --gold: #C49959;
+    --dark: #2C2D32;
+    --light: #F8F8F8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+.header {
+    background: var(--dark);
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.hero {
+    background: var(--light);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.gold-text {
+    color: var(--gold);
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    margin: 3rem 0;
+}
+
+.button {
+    background: var(--dark);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button.gold {
+    background: var(--gold);
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Add to your CSS */
+.section-light {
+    background: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.section-gold {
+    background: var(--gold);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.section-grey {
+    background: var(--light);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* Update unique-offer section */
+.unique-offer {
+    padding: 2rem;
+    background: var(--gold);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin: 2rem;
+ }
+ 
+ .unique-offer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+ }
+ 
+ .offer-highlights h3 {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    color: var(--gold);
+ }
+ 
+ .offer-highlights ul {
+    display: grid;
+    gap: 1rem;
+ }
+ 
+ .offer-highlights li {
+    background: var(--light);
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-radius: 8px;
+    position: relative;
+ }
+ 
+ .offer-highlights li:before {
+    content: "→";
+    position: absolute;
+    left: 1rem;
+    color: var(--gold);
+ }
+ 
+ /* Update clinic-features section */
+ .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+ }
+ 
+ .tech-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: 100%;
+ }
+ 
+ .tech-item h4 {
+    color: var(--gold);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+ }
+ 
+ .tech-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .tech-item li {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+ }
+ 
+ .tech-item li:before {
+    content: "→";
+    color: var(--gold);
+    position: absolute;
+    left: 0;
+ }
+ 
+ .tech-item p {
+    line-height: 1.6;
+    color: var(--dark);
+ }
+ 
+ @media (max-width: 768px) {
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .tech-item {
+        padding: 1.5rem;
+    }
+ }
+
+ .eligibility {
+    background: var(--gold);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin: 2rem;
+ }
+ 
+ .eligibility h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+ }
+ 
+ .eligibility p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+ }
+ 
+ .eligibility ul {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+ }
+ 
+ .eligibility li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+ }
+ 
+ .eligibility li:before {
+    content: "•";
+    color: var(--gold);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+ }
+ 
+ .eligibility li:last-child {
+    margin-bottom: 0;
+ }
+ 
+ @media (max-width: 768px) {
+    .eligibility {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .eligibility ul {
+        padding: 1.5rem;
+    }
+    
+    .eligibility li {
+        padding-left: 1.2rem;
+    }
+ }
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.benefit-list li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: var(--light);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.benefit-list li:before {
+    content: "✓";
+    color: var(--gold);
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.content-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ 
+ .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 3rem auto;
+ }
+ 
+ .service-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+ }
+ 
+ .service-icon {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+ }
+ 
+ .team-section {
+    background: var(--light);
+    padding: 4rem 2rem;
+ }
+ 
+ .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ 
+ .team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+ }
+ 
+ .team-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+ }
+ 
+ /* .cta-section {
+    background: var(--gold);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+ } */
+ 
+ .payment-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+ }
+ 
+ .payment-options img {
+    max-width: 200px;
+    height: auto;
+ }
+ 
+ #contact-form-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 4rem 2rem;
+    background: var(--light);
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+ }
+ 
+ #contact-form-section .eapps-contact-form-cde9b9ef-6401-42c7-b20e-8ed047c31753-custom-css-hook {
+    max-width: 800px;
+    margin: 0 auto;
+ }
+ 
+ footer {
+    background: var(--dark);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+ }
+ 
+ @media (max-width: 768px) {
+    .tech-grid,
+    .features-grid,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+ 
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .button {
+        display: block;
+        margin: 1rem auto;
+    }
+ 
+    #contact-form-section {
+        margin: 2rem 1rem;
+        padding: 2rem 1rem;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    .features-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .payment-options img {
+        max-width: 150px;
+    }
+ 
+    .team-card img {
+        width: 150px;
+        height: 150px;
+    }
+ }
