@@ -406,6 +406,36 @@ h1, h2, h3, h4, h5, h6 {
     }
  }
 
+ .special-offer {
+    padding: 4rem 2rem;
+    background: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Rounded edges */
+    margin: 2rem; /* Optional: Add margin for spacing */
+}
+
+.special-offer-content {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.special-offer-content h2 {
+    margin-bottom: 2rem;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align list items to the left */
+}
+
+.benefit-list li {
+    margin-bottom: 1rem; /* Space between list items */
+}
+
 /* Features Grid */
 .features-grid {
     display: grid;
