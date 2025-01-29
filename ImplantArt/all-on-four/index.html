@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium All-on-4 Dental Implants | Implant Art Brisbane</title>
+    
+    <!-- Google Analytics 4 (GA4) Implementation -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            'page_title': 'Premium All-on-4 Dental Implants Landing Page',
+            'custom_map': {
+                'dimension1': 'user_engagement',
+                'dimension2': 'form_submissions'
+            }
+        });
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
@@ -13,8 +29,12 @@
 <body>
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <div class="elfsight-app-fd652809-7dce-447d-9d4c-99e6e5368072" data-elfsight-app-lazy></div>
+    
     <header class="header">
-        <img src="https://www.implantart.com.au/wp-content/uploads/2024/11/Implant-Art-Dental-Clinic-Logo-1.svg" alt="Implant Art Logo" class="logo">
+        <img src="https://www.implantart.com.au/wp-content/uploads/2024/11/Implant-Art-Dental-Clinic-Logo-1.svg" 
+             alt="Implant Art Logo" 
+             class="logo"
+             onclick="gtag('event', 'logo_click', {'event_category': 'Navigation'});">
     </header>
 
     <section class="hero">
@@ -30,11 +50,17 @@
             <b><u>RECOVER YOUR SMILE IN LESS THAN 24 HOURS!</u></b>
         </p>
         <div class="cta-buttons animate__animated animate__zoomIn animate__delay-1s">
-            <a href="#contact-form-section" id="register-btn" class="button"><b>REGISTER NOW</b></a>
+            <a href="#contact-form-section" 
+               id="register-btn" 
+               class="button" 
+               onclick="gtag('event', 'register_click', {
+                   'event_category': 'Engagement',
+                   'event_label': 'Hero Register Button'
+               });">
+                <b>REGISTER NOW</b>
+            </a>
         </div>
     </section>
-    
-    
 
     <section class="unique-offer">
         <div class="content-wrapper">
@@ -48,19 +74,18 @@
             </div>
     
             <div class="offer-highlights animate__animated animate__fadeInUp">
-            <div class="highlight-box">
-                <h3>Why This Limited Opportunity?</h3>
-                <p>As a newly established clinic, we are committed to showcasing our expertise through real patient experiences. 
-                    <b><u>To achieve this, we are offering a limited opportunity for a select group of individuals in need of full-arch implant treatment to receive our premium care at cost price.</u></b> 
-                    In exchange, you agree to allow us to document your journey—including photos, videos, and testimonials—which will be used for our marketing efforts.  
-                    <b><u>This is your chance to transform your smile with top-tier care while helping others see the life-changing impact of our treatments.</u></b>  
-                </p>
-                <p class="highlight-note">
-                    <b>This exclusive opportunity allows us to build our portfolio with real success stories while offering significant value to our initial patients.</b>
-                </p>
-            </div>
+                <div class="highlight-box">
+                    <h3>Why This Limited Opportunity?</h3>
+                    <p>As a newly established clinic, we are committed to showcasing our expertise through real patient experiences. 
+                        <b><u>To achieve this, we are offering a limited opportunity for a select group of individuals in need of full-arch implant treatment to receive our premium care at cost price.</u></b> 
+                        In exchange, you agree to allow us to document your journey—including photos, videos, and testimonials—which will be used for our marketing efforts.  
+                        <b><u>This is your chance to transform your smile with top-tier care while helping others see the life-changing impact of our treatments.</u></b>  
+                    </p>
+                    <p class="highlight-note">
+                        <b>This exclusive opportunity allows us to build our portfolio with real success stories while offering significant value to our initial patients.</b>
+                    </p>
+                </div>
                 
-    
                 <div class="highlight-box">
                     <h3>Premium Features</h3>
                     <ul class="premium-features">
@@ -74,7 +99,14 @@
             </div>
             
             <div class="offer-cta animate__animated animate__fadeInUp">
-                <a href="#contact-form-section" class="cta-button">Claim Your Offer</a>
+                <a href="#contact-form-section" 
+                   class="cta-button"
+                   onclick="gtag('event', 'offer_cta_click', {
+                       'event_category': 'Engagement',
+                       'event_label': 'Offer Section CTA'
+                   });">
+                    Claim Your Offer
+                </a>
             </div>
         </div>
     </section>
@@ -116,13 +148,19 @@
             <p>A thorough clinical assessment will determine your eligibility for this transformative treatment.</p>
         </div>
     </section>
-    
+
     <div class="content-wrapper">
         <div class="offer-cta animate__animated animate__fadeInUp">
-            <a href="#contact-form-section" class="cta-button">Register Now for Comprehensive Assessment</a>
-        </div
+            <a href="#contact-form-section" 
+               class="cta-button"
+               onclick="gtag('event', 'assessment_cta_click', {
+                   'event_category': 'Engagement',
+                   'event_label': 'Assessment CTA'
+               });">
+                Register Now for Comprehensive Assessment
+            </a>
+        </div>
     </div>
-   
 
     <div class="features-grid">
         <div class="feature-card animate__animated animate__flipInX">
@@ -156,19 +194,22 @@
     <section id="contact-form-section">
         <div class="content-wrapper animate__animated animate__zoomIn">
             <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-cde9b9ef-6401-42c7-b20e-8ed047c31753"></div>
+            <div class="elfsight-app-cde9b9ef-6401-42c7-b20e-8ed047c31753"
+                 onload="gtag('event', 'form_load', {
+                     'event_category': 'Form',
+                     'event_label': 'Contact Form Load'
+                 });">
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="footer-content">
-            <!-- Address Section (Now on Top) -->
             <div class="footer-info">
                 <p><strong>Opposite Lord Stanley Hotel</strong></p>
                 <p>977 Stanley St E, East Brisbane QLD 4169</p>
             </div>
-    
-            <!-- Google Maps Embed (Now Below) -->
+            
             <div class="footer-map">
                 <iframe 
                     width="100%" 
@@ -177,18 +218,72 @@
                     loading="lazy"
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23514.58805234908!2d153.03173276428146!3d-27.477112983936927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9158b8dc29aefd%3A0x502a35af3dea700!2s977%20Stanley%20St%20E%2C%20East%20Brisbane%20QLD%204169%2C%20Australia!5e0!3m2!1sen!2sus!4v1706528576955"
-                ></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.4770763187584!2d153.0446427!3d-27.4884815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915b9b57be2ae9%3A0x58a1eea5e2deb710!2sImplant+Art!5e0!3m2!1sen!2sau!4v1706528576955">
+                </iframe>
+                <div class="map-info">
+                    <h3>Implant Art</h3>
+                    <p>Opposite Lord Stanley Hotel, 977 Stanley St E, East Brisbane QLD 4169, Australia</p>
+                    <div class="map-rating">
+                        <span>5.0</span>
+                        <span class="stars">★★★★★</span>
+                        <span>12 reviews</span>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Implant+Art/@-27.4884815,153.0446427,17z/data=!3m1!4b1!4m6!3m5!1s0x6b915b9b57be2ae9:0x58a1eea5e2deb710!8m2!3d-27.4884863!4d153.0472176!16s%2Fg%2F11vz0_3qxn?entry=ttu" 
+                       target="_blank" 
+                       class="directions-btn">
+                        Directions
+                    </a>
+                </div>
             </div>
         </div>
-        
-        <!-- Copyright Section -->
         <p class="footer-copyright">&copy; 2025 Implant Art Dental Clinic</p>
     </footer>
-    
-    
-    
+
     <script>
+        // Enhanced scroll tracking
+        let scrollMarkers = {
+            25: false,
+            50: false,
+            75: false,
+            90: false
+        };
+
+        window.addEventListener('scroll', function() {
+            let scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+            
+            Object.keys(scrollMarkers).forEach(marker => {
+                if (!scrollMarkers[marker] && scrollPercent >= parseInt(marker)) {
+                    scrollMarkers[marker] = true;
+                    gtag('event', 'scroll_depth', {
+                        'event_category': 'Engagement',
+                        'event_label': `${marker}% Scrolled`,
+                        'value': parseInt(marker)
+                    });
+                }
+            });
+        });
+
+        // Track time spent on page
+        let startTime = new Date();
+        window.addEventListener('beforeunload', function() {
+            let endTime = new Date();
+            let timeSpent = Math.round((endTime - startTime) / 1000);
+            gtag('event', 'time_spent', {
+                'event_category': 'Engagement',
+                'event_label': 'Time on Page',
+                'value': timeSpent
+            });
+        });
+
+        // Form submission tracking for Elfsight form
+        document.addEventListener('elfsightFormSubmitted', function() {
+            gtag('event', 'form_submission', {
+                'event_category': 'Form',
+                'event_label': 'Contact Form Submission'
+            });
+        });
+
+        // Section visibility tracking with ScrollMagic
         const sections = document.querySelectorAll("section");
         sections.forEach((section) => {
             const controller = new ScrollMagic.Controller();
@@ -198,9 +293,36 @@
                 reverse: false,
             })
             .on("enter", () => {
-                gsap.fromTo(section, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" });
+                gsap.fromTo(section, 
+                    { opacity: 0, y: 50 }, 
+                    { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+                );
+                gtag('event', 'section_view', {
+                    'event_category': 'Content',
+                    'event_label': `${section.className} Viewed`
+                });
             })
             .addTo(controller);
+        });
+
+        // Track feature card interactions
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                gtag('event', 'feature_hover', {
+                    'event_category': 'Engagement',
+                    'event_label': this.querySelector('h3').textContent
+                });
+            });
+        });
+
+        // Track benefit list interactions
+        document.querySelectorAll('.benefit-list li').forEach(benefit => {
+            benefit.addEventListener('mouseenter', function() {
+                gtag('event', 'benefit_hover', {
+                    'event_category': 'Engagement',
+                    'event_label': this.textContent
+                });
+            });
         });
     </script>
 </body>
