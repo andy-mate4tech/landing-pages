@@ -40,7 +40,6 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
-/* Hero Section Fix */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('https://www.implantart.com.au/wp-content/uploads/2024/11/Clinic-group-2048x1621-1.jpg');
@@ -59,13 +58,45 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+/* Headline Styling */
 .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-transform: uppercase;
     line-height: 1.2;
 }
 
+.hero h1 span {
+    display: block;
+    font-variant-numeric: tabular-nums; /* Fixes misalignment of numbers */
+}
+
+/* Font Sizes & Styles */
+.hero .large-text {
+    font-size: clamp(3rem, 6vw, 4rem);
+    font-weight: bold;
+}
+
+.hero .medium-text {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: bold;
+}
+
+.hero .gold-text {
+    font-size: clamp(2.8rem, 5vw, 3.2rem);
+    font-weight: bold;
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.hero .small-text {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hero Text Styling */
 .hero-text {
     font-size: clamp(1.2rem, 3vw, 2rem);
     font-weight: 500;
@@ -79,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 1rem;
 }
 
-/* Buttons */
+/* CTA Buttons */
 .cta-buttons {
     margin: 3rem 0;
 }
