@@ -6,39 +6,17 @@
     <title>Premium All-on-4 Dental Implants | Implant Art Brisbane</title>
     
     <!-- Google Tag Manager (GTM) -->
-<script>
-    (function(w,d,s,l,i){
-        w[l]=w[l]||[];
-        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-        var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; 
-        j.async=true; 
-        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl; 
-        f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T32P5QR4'); // Replace with your GTM ID
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[]; w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; 
+            j.async=true; 
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl; 
+            f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T32P5QR4'); // Replace with your GTM ID
     </script>
     <!-- End Google Tag Manager -->
-    
-    <!-- Google Tag Manager (noscript fallback for GTM) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T32P5QR4"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        
-        // GA4 Configuration via GTM
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX', { // Replace with your GA4 ID
-            'page_title': 'Premium All-on-4 Dental Implants Landing Page',
-            'custom_map': {
-                'dimension1': 'user_engagement',
-                'dimension2': 'form_submissions'
-            }
-        });
-    </script>
-    
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
@@ -264,17 +242,30 @@
     </footer>
 
     <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+    
+        // Track CTA Button Clicks
+        document.getElementById('register-btn').addEventListener('click', function() {
+            gtag('event', 'register_click', {
+                'event_category': 'Engagement',
+                'event_label': 'Hero Register Button'
+            });
+        });
+    
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                gtag('event', 'offer_cta_click', {
+                    'event_category': 'Engagement',
+                    'event_label': this.textContent
+                });
+            });
+        });
+    
         // Enhanced scroll tracking
-        let scrollMarkers = {
-            25: false,
-            50: false,
-            75: false,
-            90: false
-        };
-
+        let scrollMarkers = { 25: false, 50: false, 75: false, 90: false };
         window.addEventListener('scroll', function() {
             let scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
-            
             Object.keys(scrollMarkers).forEach(marker => {
                 if (!scrollMarkers[marker] && scrollPercent >= parseInt(marker)) {
                     scrollMarkers[marker] = true;
@@ -286,7 +277,7 @@
                 }
             });
         });
-
+    
         // Track time spent on page
         let startTime = new Date();
         window.addEventListener('beforeunload', function() {
@@ -298,7 +289,7 @@
                 'value': timeSpent
             });
         });
-
+    
         // Form submission tracking for Elfsight form
         document.addEventListener('elfsightFormSubmitted', function() {
             gtag('event', 'form_submission', {
@@ -306,7 +297,7 @@
                 'event_label': 'Contact Form Submission'
             });
         });
-
+    
         // Section visibility tracking with ScrollMagic
         const sections = document.querySelectorAll("section");
         sections.forEach((section) => {
@@ -328,7 +319,7 @@
             })
             .addTo(controller);
         });
-
+    
         // Track feature card interactions
         document.querySelectorAll('.feature-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
@@ -338,7 +329,7 @@
                 });
             });
         });
-
+    
         // Track benefit list interactions
         document.querySelectorAll('.benefit-list li').forEach(benefit => {
             benefit.addEventListener('mouseenter', function() {
@@ -349,5 +340,6 @@
             });
         });
     </script>
+    
 </body>
 </html>
