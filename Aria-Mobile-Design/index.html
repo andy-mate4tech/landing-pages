@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Expanded Retail App UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">ARIA Expanded Retail App UI</div>
+    <div class="subtitle">Redesigned for Dollarsense</div>
+    
+    <div class="mockup-container">
+        <!-- Login Screen -->
+        <div class="mockup">
+            <div class="status-bar">
+                <div style="width: 50px; font-size: 14px;">9:41</div>
+                <div style="font-size: 14px;">
+                    <span>📶</span>
+                    <span>📡</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="login-screen">
+                <div class="login-logo">
+                    <div style="font-size: 28px; font-weight: 700; margin-bottom: 5px;">
+                        <span class="dollars">dollar</span><span class="sense">sense</span>
+                    </div>
+                    <div class="tag">Discount Variety Stores</div>
+                    <div style="font-size: 20px; font-weight: 700; margin-top: 20px; color: #009BFF;">ARIA</div>
+                    <div style="font-size: 12px; color: #777; margin-top: 5px;">Retail Intelligence App</div>
+                </div>
+                
+                <div class="input-container">
+                    <input type="text" class="input-field" placeholder="Username">
+                </div>
+                
+                <div class="input-container">
+                    <input type="password" class="input-field" placeholder="Password">
+                </div>
+                
+                <button class="login-button">Login</button>
+                
+                <div class="forgot-password">
+                    Forgot your password?
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Screen with Menu Grid -->
+        <div class="mockup">
+            <div class="status-bar">
+                <div style="width: 50px; font-size: 14px;">9:41</div>
+                <div style="font-size: 14px;">
+                    <span>📶</span>
+                    <span>📡</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="dollarsense-header">
+                <div>dollarsense</div>
+            </div>
+            
+            <div class="nav-bar">
+                <div class="nav-title">ARIA</div>
+                <div class="store-name">
+                    Store #123
+                    <div class="printer-status"></div>
+                </div>
+            </div>
+            
+            <div style="padding: 15px 15px 0;">
+                <div style="font-size: 22px; font-weight: 600; margin-bottom: 5px;">Welcome back</div>
+                <div style="font-size: 14px; color: #777; margin-bottom: 20px;">What would you like to do today?</div>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-icon">💰</div>
+                    <div class="menu-text">Product Price</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">📋</div>
+                    <div class="menu-text">Scan & Send</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">🔄</div>
+                    <div class="menu-text">Stocktake</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">⚙️</div>
+                    <div class="menu-text">Settings</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stocktake Counting Screen with Notes -->
+        <div class="mockup">
+            <div class="status-bar">
+                <div style="width: 50px; font-size: 14px;">9:41</div>
+                <div style="font-size: 14px;">
+                    <span>📶</span>
+                    <span>📡</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="dollarsense-header">
+                <div>dollarsense</div>
+            </div>
+            
+            <div class="connectivity-banner">
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Odoo Server: Connected</div>
+                </div>
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Printer: Ready</div>
+                </div>
+            </div>
+            
+            <div class="nav-bar">
+                <div style="display: flex; align-items: center;">
+                    <div style="margin-right: 10px; font-size: 20px;">←</div>
+                    <div class="nav-title">Craft Department</div>
+                </div>
+                <div class="store-name">
+                    Store #123 - Downtown
+                </div>
+            </div>
+            
+            <div class="product-screen">
+                <div class="content-area">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <div style="font-weight: 600;">Craft Department (15/32)</div>
+                        <div style="font-size: 12px; color: #777;">46% complete</div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 46%;"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Item</div>
+                            <div style="font-weight: 600;">Mont Marte Watercolour Set</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Barcode</div>
+                            <div>9328577042027</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Previous count</div>
+                            <div>12 units</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Current count</div>
+                            <div class="counter">
+                                <div class="counter-button counter-button-minus">-</div>
+                                <input type="text" class="counter-input" value="15">
+                                <div class="counter-button counter-button-plus">+</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Notes</div>
+                            <textarea style="width: 100%; padding: 10px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 14px; height: 60px; box-sizing: border-box;" placeholder="Add any notes here...">Found 3 boxes in back storage.</textarea>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between;">
+                            <div class="action-button secondary-button" style="flex: 1; margin-right: 8px;">Skip</div>
+                            <div class="action-button" style="flex: 1; margin-left: 8px;">Save Count</div>
+                        </div>
+                    </div>
+                    
+                    <div style="font-weight: 600; margin: 20px 0 15px;">Recently Counted</div>
+                    
+                    <div class="product-list">
+                        <div class="list-item">
+                            <div class="item-details">
+                                <div class="item-name">Mont Marte Acrylic Paint</div>
+                                <div class="item-description">SKU: 9328577016301</div>
+                            </div>
+                            <div style="font-weight: 600;">8</div>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-details">
+                                <div class="item-name">Mont Marte Dual Tip Marker</div>
+                                <div class="item-description">SKU: 9328577012570</div>
+                            </div>
+                            <div style="font-weight: 600;">24</div>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-details">
+                                <div class="item-name">Diamond Butterfly</div>
+                                <div class="item-description">SKU: 9320760226535</div>
+                            </div>
+                            <div style="font-weight: 600;">3</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bottom-nav">
+                    <div class="nav-item">
+                        <div class="nav-icon">🏠</div>
+                        <div>Home</div>
+                    </div>
+                    <div class="nav-item">
+                        <div class="nav-icon">🔍</div>
+                        <div>Search</div>
+                    </div>
+                    <div class="nav-item active">
+                        <div class="nav-icon">🛒</div>
+                        <div>Orders</div>
+                    </div>
+                    <div class="nav-item">
+                        <div class="nav-icon">👤</div>
+                        <div>Profile</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stocktake Upload Confirmation Modal -->
+        <div class="mockup">
+            <div class="status-bar">
+                <div style="width: 50px; font-size: 14px;">9:41</div>
+                <div style="font-size: 14px;">
+                    <span>📶</span>
+                    <span>📡</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="dollarsense-header">
+                <div>dollarsense</div>
+            </div>
+            
+            <div class="connectivity-banner">
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Odoo Server: Connected</div>
+                </div>
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Printer: Ready</div>
+                </div>
+            </div>
+            
+            <div class="nav-bar">
+                <div style="display: flex; align-items: center;">
+                    <div style="margin-right: 10px; font-size: 20px;">←</div>
+                    <div class="nav-title">Craft Department</div>
+                </div>
+                <div class="store-name">
+                    Store #123 - Downtown
+                </div>
+            </div>
+            
+            <div class="product-screen" style="opacity: 0.3;">
+                <div class="content-area">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <div style="font-weight: 600;">Craft Department (32/32)</div>
+                        <div style="font-size: 12px; color: #777;">100% complete</div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="text-align: center; padding: 15px 0;">
+                            <div style="font-size: 14px; color: #777; margin-bottom: 5px;">Scan next item</div>
+                            <div style="font-size: 28px;">📷</div>
+                        </div>
+                    </div>
+                    
+                    <div style="font-weight: 600; margin: 20px 0 15px;">Recently Counted</div>
+                    
+                    <div class="product-list">
+                        <div class="list-item">
+                            <div class="item-details">
+                                <div class="item-name">Mont Marte Watercolour Set</div>
+                                <div class="item-description">SKU: 9328577042027</div>
+                            </div>
+                            <div style="font-weight: 600;">15</div>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-details">
+                                <div class="item-name">Mont Marte Acrylic Paint</div>
+                                <div class="item-description">SKU: 9328577016301</div>
+                            </div>
+                            <div style="font-weight: 600;">8</div>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-details">
+                                <div class="item-name">Mont Marte Dual Tip Marker</div>
+                                <div class="item-description">SKU: 9328577012570</div>
+                            </div>
+                            <div style="font-weight: 600;">24</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-overlay">
+                <div class="modal">
+                    <div class="modal-title">Upload Stocktake Data</div>
+                    <div class="modal-content">
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <div style="font-size: 48px; margin-bottom: 15px;">✅</div>
+                            <div style="font-weight: 500; font-size: 16px; margin-bottom: 10px;">Stocktake Complete!</div>
+                            <div style="font-size: 14px; color: #777;">32 items have been counted.</div>
+                        </div>
+                        
+                        <div style="background-color: #f8f8f8; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                            <div style="font-size: 14px; font-weight: 500; margin-bottom: 10px;">Choose upload method:</div>
+                            
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <input type="radio" id="directUpdate" name="uploadMethod" checked style="margin-right: 10px;">
+                                <label for="directUpdate" style="font-size: 14px;">Direct Inventory Update</label>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center;">
+                                <input type="radio" id="excelExport" name="uploadMethod" style="margin-right: 10px;">
+                                <label for="excelExport" style="font-size: 14px;">Export to Excel for Review</label>
+                            </div>
+                        </div>
+                        
+                        <div style="font-size: 12px; color: #777; text-align: center;">
+                            Data will be saved locally regardless of your choice.
+                        </div>
+                    </div>
+                    <div class="modal-buttons">
+                        <div class="modal-button modal-button-secondary">Save Only</div>
+                        <div class="modal-button modal-button-primary">Upload Now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Failed Upload Modal -->
+        <div class="mockup">
+            <div class="status-bar">
+                <div style="width: 50px; font-size: 14px;">9:41</div>
+                <div style="font-size: 14px;">
+                    <span>📶</span>
+                    <span>📡</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="dollarsense-header">
+                <div>dollarsense</div>
+            </div>
+            
+            <div class="connectivity-banner">
+                <div class="connection-status">
+                    <div class="status-dot status-disconnected"></div>
+                    <div>Odoo Server: Error</div>
+                </div>
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Printer: Ready</div>
+                </div>
+            </div>
+            
+            <div class="nav-bar">
+                <div style="display: flex; align-items: center;">
+                    <div style="margin-right: 10px; font-size: 20px;">←</div>
+                    <div class="nav-title">Bath & Body</div>
+                </div>
+                <div class="store-name">
+                    Store #123 - Downtown
+                </div>
+            </div>
+            
+            <div class="product-screen" style="opacity: 0.3;">
+                <div class="content-area">
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <div style="font-weight: 600;">Stocktake Details</div>
+                            <div class="badge badge-warning">Upload Failed</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Department</div>
+                            <div style="font-weight: 500;">Bath & Body</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Items Count</div>
+                            <div style="font-weight: 500;">28 items</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Completion Date</div>
+                            <div style="font-weight: 500;">March 15, 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-overlay">
+                <div class="modal">
+                    <div class="modal-title">Upload Failed</div>
+                    <div class="modal-content">
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <div style="font-size: 48px; margin-bottom: 15px;">❌</div>
+                            <div style="font-weight: 500; font-size: 16px; margin-bottom: 10px;">Server Connection Error</div>
+                            <div style="font-size: 14px; color: #777; margin-bottom: 20px;">We couldn't connect to the Odoo server. Your data has been saved locally.</div>
+                        </div>
+                        
+                        <div style="background-color: #f8f8f8; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                            <div style="font-size: 14px; font-weight: 500; margin-bottom: 10px;">Options:</div>
+                            
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <input type="radio" id="retryLater" name="failOption" checked style="margin-right: 10px;">
+                                <label for="retryLater" style="font-size: 14px;">Retry upload later</label>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <input type="radio" id="excelExport" name="failOption" style="margin-right: 10px;">
+                                <label for="excelExport" style="font-size: 14px;">Export to Excel</label>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center;">
+                                <input type="radio" id="emailBackup" name="failOption" style="margin-right: 10px;">
+                                <label for="emailBackup" style="font-size: 14px;">Email backup to head office</label>
+                            </div>
+                        </div>
+                        
+                        <div style="font-size: 12px; color: #777; text-align: center;">
+                            Data will remain accessible in your stocktake history.
+                        </div>
+                    </div>
+                    <div class="modal-buttons">
+                        <div class="modal-button modal-button-secondary">Try Again</div>
+                        <div class="modal-button modal-button-primary">Confirm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Screen -->
+        <div class="mockup">
+            <div class="status-bar">
+                <div style="width: 50px; font-size: 14px;">9:41</div>
+                <div style="font-size: 14px;">
+                    <span>📶</span>
+                    <span>📡</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="dollarsense-header">
+                <div>dollarsense</div>
+            </div>
+            
+            <div class="connectivity-banner">
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Odoo Server: Connected</div>
+                </div>
+                <div class="connection-status">
+                    <div class="status-dot status-disconnected"></div>
+                    <div>Printer: Not Connected</div>
+                </div>
+            </div>
+            
+            <div class="nav-bar">
+                <div style="display: flex; align-items: center;">
+                    <div style="margin-right: 10px; font-size: 20px;">←</div>
+                    <div class="nav-title">Settings</div>
+                </div>
+                <div class="store-name">
+                    Store #123 - Downtown
+                </div>
+            </div>
+            
+            <div class="product-screen">
+                <div class="content-area">
+                    <div class="settings-section">
+                        <div style="font-weight: 600; margin-bottom: 15px;">Device Settings</div>
+                        
+                        <div class="settings-item">
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 20px; margin-right: 15px;">🖨️</div>
+                                <div>
+                                    <div style="font-weight: 500;">Printer</div>
+                                    <div style="font-size: 12px; color: #777;">Connect label printer</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                        
+                        <div class="settings-item">
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 20px; margin-right: 15px;">🔗</div>
+                                <div>
+                                    <div style="font-weight: 500;">Network</div>
+                                    <div style="font-size: 12px; color: #777;">Configure Wi-Fi and server</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                        
+                        <div class="settings-item">
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 20px; margin-right: 15px;">📱</div>
+                                <div>
+                                    <div style="font-weight: 500;">Display</div>
+                                    <div style="font-size: 12px; color: #777;">Screen brightness and timeout</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-section">
+                        <div style="font-weight: 600; margin-bottom: 15px;">App Settings</div>
+                        
+                        <div class="settings-item">
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 20px; margin-right: 15px;">🔄</div>
+                                <div>
+                                    <div style="font-weight: 500;">Sync</div>
+                                    <div style="font-size: 12px; color: #777;">Data synchronization</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                        
+                        <div class="settings-item">
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 20px; margin-right: 15px;">🔔</div>
+                                <div>
+                                    <div style="font-weight: 500;">Notifications</div>
+                                    <div style="font-size: 12px; color: #777;">Alert preferences</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                        
+                        <div class="settings-item">
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 20px; margin-right: 15px;">🔒</div>
+                                <div>
+                                    <div style="font-weight: 500;">Security</div>
+                                    <div style="font-size: 12px; color: #777;">PIN and permissions</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-section">
+                        <div style="font-weight: 600; margin-bottom: 15px;">About</div>
+                        
+                        <div class="settings-item">
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 20px; margin-right: 15px;">ℹ️</div>
+                                <div>
+                                    <div style="font-weight: 500;">Version</div>
+                                    <div style="font-size: 12px; color: #777;">ARIA v2.1.3</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="settings-item">
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 20px; margin-right: 15px;">📞</div>
+                                <div>
+                                    <div style="font-weight: 500;">Support</div>
+                                    <div style="font-size: 12px; color: #777;">Contact IT help desk</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Network Configuration Screen -->
+        <div class="mockup">
+            <div class="status-bar">
+                <div style="width: 50px; font-size: 14px;">9:41</div>
+                <div style="font-size: 14px;">
+                    <span>📶</span>
+                    <span>📡</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="dollarsense-header">
+                <div>dollarsense</div>
+            </div>
+            
+            <div class="connectivity-banner">
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Odoo Server: Connected</div>
+                </div>
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Printer: Ready</div>
+                </div>
+            </div>
+            
+            <div class="nav-bar">
+                <div style="display: flex; align-items: center;">
+                    <div style="margin-right: 10px; font-size: 20px;">←</div>
+                    <div class="nav-title">Network Settings</div>
+                </div>
+                <div class="store-name">
+                    Store #123 - Downtown
+                </div>
+            </div>
+            
+            <div class="product-screen">
+                <div class="content-area">
+                    <div class="card">
+                        <div style="font-weight: 600; margin-bottom: 15px;">Wi-Fi Configuration</div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Status</div>
+                            <div style="display: flex; align-items: center;">
+                                <div class="status-dot status-connected" style="margin-right: 10px;"></div>
+                                <div style="color: #7AE224; font-weight: 500;">Connected to "DollarSense_Store123"</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">IP Address</div>
+                            <div style="font-family: monospace;">192.168.1.45</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 12px; color: #777; margin-bottom: 5px;">Signal Strength</div>
+                            <div style="display: flex; align-items: center;">
+                                <div style="width: 100%; height: 6px; background-color: #f0f0f0; border-radius: 3px; overflow: hidden; margin-right: 10px;">
+                                    <div style="width: 85%; height: 100%; background-color: #7AE224;"></div>
+                                </div>
+                                <div>85%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="action-button" style="width: 100%; text-align: center;">Available Networks</div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="font-weight: 600; margin-bottom: 15px;">Network Diagnostics</div>
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <div style="font-size: 20px; margin-right: 15px;">🔄</div>
+                            <div style="flex: 1;">
+                                <div style="font-weight: 500; margin-bottom: 3px;">Ping Test</div>
+                                <div style="font-size: 12px; color: #777;">Check server response time</div>
+                            </div>
+                            <div style="font-size: 14px; font-weight: 500; color: #7AE224;">32ms</div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <div style="font-size: 20px; margin-right: 15px;">📶</div>
+                            <div style="flex: 1;">
+                                <div style="font-weight: 500; margin-bottom: 3px;">Signal Strength Test</div>
+                                <div style="font-size: 12px; color: #777;">Check Wi-Fi signal quality</div>
+                            </div>
+                            <div style="font-size: 14px; font-weight: 500; color: #7AE224;">Excellent</div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <div style="font-size: 20px; margin-right: 15px;">⚡</div>
+                            <div style="flex: 1;">
+                                <div style="font-weight: 500; margin-bottom: 3px;">Speed Test</div>
+                                <div style="font-size: 12px; color: #777;">Check download/upload speed</div>
+                            </div>
+                            <div style="font-size: 14px; font-weight: 500; color: #7AE224;">18.5 Mbps</div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center;">
+                            <div style="font-size: 20px; margin-right: 15px;">🔗</div>
+                            <div style="flex: 1;">
+                                <div style="font-weight: 500; margin-bottom: 3px;">Server Connection</div>
+                                <div style="font-size: 12px; color: #777;">Test connection to Odoo server</div>
+                            </div>
+                            <div style="font-size: 14px; font-weight: 500; color: #7AE224;">Connected</div>
+                        </div>
+                        
+                        <div class="action-button" style="width: 100%; text-align: center; margin-top: 20px;">Run Full Diagnostic</div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="font-weight: 600; margin-bottom: 15px;">Advanced Settings</div>
+                        
+                        <div style="font-size: 14px; color: #777; margin-bottom: 20px;">
+                            These settings should only be modified by IT support personnel.
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <div>
+                                <div style="font-weight: 500; margin-bottom: 5px;">Use Static IP</div>
+                                <div style="font-size: 12px; color: #777;">Override DHCP settings</div>
+                            </div>
+                            <div style="width: 46px; height: 24px; background-color: #f0f0f0; border-radius: 12px; position: relative; cursor: pointer;">
+                                <div style="position: absolute; width: 20px; height: 20px; background-color: white; border-radius: 10px; top: 2px; left: 2px;"></div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <div>
+                                <div style="font-weight: 500; margin-bottom: 5px;">Proxy Settings</div>
+                                <div style="font-size: 12px; color: #777;">Configure network proxy</div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 500; margin-bottom: 5px;">DNS Configuration</div>
+                                <div style="font-size: 12px; color: #777;">Configure DNS servers</div>
+                            </div>
+                            <div style="font-size: 20px;">→</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Printer Connection Screen -->
+        <div class="mockup">
+            <div class="status-bar">
+                <div style="width: 50px; font-size: 14px;">9:41</div>
+                <div style="font-size: 14px;">
+                    <span>📶</span>
+                    <span>📡</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="dollarsense-header">
+                <div>dollarsense</div>
+            </div>
+            
+            <div class="connectivity-banner">
+                <div class="connection-status">
+                    <div class="status-dot status-connected"></div>
+                    <div>Odoo Server: Connected</div>
+                </div>
+                <div class="connection-status">
+                    <div class="status-dot status-disconnected"></div>
+                    <div>Printer: Scanning...</div>
+                </div>
+            </div>
+            
+            <div class="nav-bar">
+                <div style="display: flex; align-items: center;">
+                    <div style="margin-right: 10px; font-size: 20px;">←</div>
+                    <div class="nav-title">Connect Printer</div>
+                </div>
+                <div class="store-name">
+                    Store #123 - Downtown
+                </div>
+            </div>
+            
+            <div class="product-screen">
+                <div class="content-area">
+                    <div style="text-align: center; padding: 30px 0;">
+                        <div style="font-size: 48px; margin-bottom: 20px;">🔄</div>
+                        <div style="font-weight: 500; font-size: 16px; margin-bottom: 10px;">Scanning for Printers</div>
+                        <div style="font-size: 14px; color: #777;">Make sure your printer is turned on and nearby</div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="font-weight: 600; margin-bottom: 15px;">Available Printers</div>
+                        
+                        <div class="printer-list">
+                            <div class="printer-item">
+                                <div style="display: flex; align-items: center;">
+                                    <div style="font-size: 20px; margin-right: 15px;">🖨️</div>
+                                    <div>
+                                        <div style="font-weight: 500;">DYMO LabelWriter 450</div>
+                                        <div style="font-size: 12px; color: #777;">Last connected: Yesterday</div>
+                                    </div>
+                                </div>
+                                <div class="action-button" style="padding: 5px 15px; font-size: 14px;">Connect</div>
+                            </div>
+                            
+                            <div class="printer-item">
+                                <div style="display: flex; align-items: center;">
+                                    <div style="font-size: 20px; margin-right: 15px;">🖨️</div>
+                                    <div>
+                                        <div style="font-weight: 500;">Brother QL-820NWB</div>
+                                        <div style="font-size: 12px; color: #777;">New device</div>
+                                    </div>
+                                </div>
+                                <div class="action-button" style="padding: 5px 15px; font-size: 14px;">Connect</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <div style="font-weight: 600; margin-bottom: 10px;">Can't see your printer?</div>
+                        <div style="font-size: 14px; color: #777; margin-bottom: 20px;">Try these troubleshooting steps:</div>
+                        
+                        <div class="troubleshoot-list">
+                            <div class="troubleshoot-item">
+                                <div style="font-size: 20px; margin-right: 15px;">1️⃣</div>
+                                <div>Make sure printer is turned on</div>
+                            </div>
+                            
+                            <div class="troubleshoot-item">
+                                <div style="font-size: 20px; margin-right: 15px;">2️⃣</div>
+                                <div>Check if printer is in pairing mode</div>
+                            </div>
+                            
+                            <div class="troubleshoot-item">
+                                <div style="font-size: 20px; margin-right: 15px;">3️⃣</div>
+                                <div>Ensure printer is within range</div>
+                            </div>
+                        </div>
+                        
+                        <div class="action-button secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">
+                            Manual Setup
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="conclusion">
+        <h2>ARIA Retail App - Design Summary</h2>
+        
+        <p>The ARIA retail app has been redesigned with a modern user interface that prioritizes usability in retail environments. The key features implemented include:</p>
+        
+        <ul>
+            <li><strong>Clear connectivity indicators</strong> - Server and printer status always visible</li>
+            <li><strong>Product Price Lookup</strong> - Easy scanning and price label printing</li>
+            <li><strong>Scan and Send</strong> - Efficient inventory request management</li>
+            <li><strong>Rotating Stocktake</strong> - Full stocktake workflow with date selection</li>
+            <li><strong>Offline capabilities</strong> - Work during connection interruptions</li>
+            <li><strong>Error handling</strong> - Clear user guidance when issues occur</li>
+            <li><strong>Settings management</strong> - Comprehensive configuration options</li>
+        </ul>
+        
+        <p>The app design follows modern mobile patterns while being optimized for Android PDA devices with barcode scanning capabilities. The interface uses a clean color scheme with high contrast elements that are easy to see in varied retail lighting conditions.</p>
+        
+        <p>All data synchronizes with the Odoo 15 backend system, ensuring that store operations remain connected to the central inventory and product management system.</p>
+        
+        <p>This design is ready for implementation by a development team, with all primary user flows and interface components clearly defined.</p>
+    </div>
+</body>
+</html> 
